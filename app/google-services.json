@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "822605110617",
+    "firebase_url": "https://usedtradeapp-default-rtdb.firebaseio.com",
+    "project_id": "usedtradeapp",
+    "storage_bucket": "usedtradeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822605110617:android:19beced69272f8bb52c048",
+        "android_client_info": {
+          "package_name": "com.sample.usedtrademarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822605110617-de7ig0d10gicgnsvpppsbrc90konavef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLxgbUWjpT7OTdj16mTQDoxDAPJ2Lb0Lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822605110617-de7ig0d10gicgnsvpppsbrc90konavef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

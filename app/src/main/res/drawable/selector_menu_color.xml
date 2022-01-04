@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/black"
+        android:state_checked="true"/> <!-- 눌렀을때 검은색 -->
+    <item android:color="@color/gray_cc"
+        android:state_checked="false"/> <!-- 평소에는 회색  -->
+
+</selector>

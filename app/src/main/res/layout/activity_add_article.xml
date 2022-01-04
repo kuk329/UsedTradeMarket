@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- custom actionbar 만듬-->
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/toolbarLayout"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_toRightOf="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="중고거래 글쓰기"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료"
+            android:textSize="18sp"
+            android:textColor="@color/orange"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/toolbarUnderLineView"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_cc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout" />
+    <LinearLayout
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarUnderLineView"
+        android:id="@+id/ll_addImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:background="@drawable/ic_camera"
+            app:backgroundTint="@color/orange"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imageAddButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_cc"
+        app:layout_constraintTop_toBottomOf="@+id/ll_addImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_addImage"
+        android:id="@+id/titleEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="제목"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/priceEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="\ 가격 (선택사항)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleEditText" />
+
+
+
+    <EditText
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/contentEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="xxx동에 올릴 게시글 내용을 작성해 주세요.
+가품및 판매금지품목은 게시가 제한될 수 있어요."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
